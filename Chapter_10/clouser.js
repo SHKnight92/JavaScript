@@ -2,25 +2,25 @@
 
 // able to remember and access it's lexical scope
 
-// function test() {
-//   var msg = "I am learning Lexical scope and Closure";
-//   function sayMsg() {
-//     console.log(msg);
-//   }
-//   sayMsg();
-// }
-// test();
+function test() {
+  var msg = "I am learning Lexical scope and Closure";
+  function sayMsg() {
+    console.log(msg);
+  }
+  sayMsg();
+}
+test();
 
 // when that function executing outside it's lexical scope
 
-// function test() {
-//   var msg = "I am learning Lexical scope and Closure";
-//   return function() {
-//     console.log(msg);
-//   }
-// }
-// var myMsg = test();
-// myMsg()
+function test() {
+  var msg = "I am learning Lexical scope and Closure";
+  return function() {
+    console.log(msg);
+  }
+}
+var myMsg = test();
+myMsg()
 
 for (i = 1; i <= 10; i++) {
   (function (n) {
