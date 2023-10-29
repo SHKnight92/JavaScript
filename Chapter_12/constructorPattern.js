@@ -11,8 +11,8 @@ var Rectangle = function (width, height) {
   };
 };
 
-var rect1 = new Rectangle(44, 3);
-rect1.draw();
+var rect3 = new Rectangle(44, 3);
+rect3.draw();
 
-var rect2 = new Rectangle(11, 7);
-rect2.draw();
+var rect4 = new Rectangle(11, 7);
+rect4.draw();
